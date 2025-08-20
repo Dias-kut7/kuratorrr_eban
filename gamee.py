@@ -11,7 +11,7 @@ import threading
 import requests
 
 # Kanal username
-channel_username = 'izatlox1'
+channel_username = 'kurator_kazino'
 
 accounts = [
     {"session": "account17", "api_id": 28955608, "api_hash": "78e8ad00f90fb80d9aac966ef1f9ce47", "message": "8600492921750358"},
@@ -119,4 +119,5 @@ if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     threading.Thread(target=ping_self).start()
     asyncio.run(telegram_main())
+
 
