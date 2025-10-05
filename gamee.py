@@ -11,18 +11,19 @@ import threading
 import requests
 
 # Kanal username
-channel_username = 'kurator_kazino'
+channel_username = 'izatlox1'
 
 accounts = [
-    {"session": "account1", "api_id": 28955608, "api_hash": "78e8ad00f90fb80d9aac966ef1f9ce47", "message": "1379974279"},
-    {"session": "account2", "api_id": 25006832, "api_hash": "2cfb6415180db7343c446040b0f96a01", "message": "1309203895"},
-    {"session": "account3", "api_id": 24263809, "api_hash": "058867cf75810357c2716abe9e3a0379", "message": "1309204339"},
-    {"session": "account4", "api_id": 24420272, "api_hash": "2b495e24a435b0cac8d69e2d5f7467f4", "message": "1309204717"},
-    {"session": "account5", "api_id": 26182312, "api_hash": "cfb7f4b4cc6b4c27ab3210ad5e307fe2", "message": "1309205125"},
-    {"session": "account6", "api_id": 23162850, "api_hash": "81d822cbdbe96bf3edefcc1740f2147e", "message": "1309205607"},
-    {"session": "account7", "api_id": 22549665, "api_hash": "af7f7a7782c4d529b51564528f5bddbc", "message": "1309206545"},
-    {"session": "account8", "api_id": 26205265, "api_hash": "f3e66c9486fa53bed9935ce4b2b1d0bf", "message": "1309207049"},
-    {"session": "account9", "api_id": 29183260, "api_hash": "3e5ece984e7df9cc5780f3f5731fabcf", "message": "1304285439"},
+    {"session": "account11", "api_id": 25006832, "api_hash": "2cfb6415180db7343c446040b0f96a01", "message": " 1409730901"},
+    {"session": "account12", "api_id": 24263809, "api_hash": "058867cf75810357c2716abe9e3a0379", "message": " 1409731397"},
+    {"session": "account13", "api_id": 24420272, "api_hash": "2b495e24a435b0cac8d69e2d5f7467f4", "message": " 1409732255"},
+    {"session": "account14", "api_id": 26182312, "api_hash": "cfb7f4b4cc6b4c27ab3210ad5e307fe2", "message": " 1409732351"},
+    {"session": "account15", "api_id": 22549665, "api_hash": "af7f7a7782c4d529b51564528f5bddbc", "message": " 1409733031"},
+    {"session": "account16", "api_id": 26205265, "api_hash": "f3e66c9486fa53bed9935ce4b2b1d0bf", "message": " 1409733907"},
+    {"session": "account17", "api_id": 27806803, "api_hash": "730d48697849a6d0f63052120b2cf3b4", "message": " 1409735245"},
+    {"session": "account18", "api_id": 23345424, "api_hash": "093c1d9f5afcbcc0bb2e4eeada7cc47c", "message": " 1409736363"},
+    {"session": "account19", "api_id": 13195192, "api_hash": "ca944410b25fb1e852d8c9f934759e9d", "message": " 1409737403"},
+    {"session": "account20", "api_id": 27187404, "api_hash": "b5e0ce0579333c3c0ef85f7d6e6d1cfd", "message": " 1406796865"},
 ]
 
 clients = []
@@ -117,6 +118,7 @@ if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     threading.Thread(target=ping_self).start()
     asyncio.run(telegram_main())
+
 
 
 
